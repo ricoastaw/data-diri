@@ -1,0 +1,385 @@
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img,
+q,
+strong,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+hgroup,
+
+nav,
+section,
+summary {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-align: justify;
+}
+
+body {
+    line-height: 1;
+    font-family: arial;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+article,
+aside,
+footer,
+header,
+hgroup,
+nav,
+section {
+    display: block;
+
+}
+
+nav ul {
+    list-style: none
+}
+
+
+q {
+    quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0
+}
+
+input,
+select {
+    vertical-align: middle
+}
+
+header {
+    background: #b7cfd8;
+    padding: 20px 30px;
+    max-width: 940px;
+    margin: auto;
+}
+
+body,
+html {
+    background-color: #FFF;
+}
+
+nav {
+    display: inline-block;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+nav ul li a {
+    background: #EEE;
+    padding: 2px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #444;
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+    background: #FFF;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+main {
+    float: left;
+    width: 60%;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    padding: 5px 6px 5px 6px;
+}
+
+article {
+    border-bottom: 2px dotted #999;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+article h2 {
+    font-weight: normal;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+article p {
+    padding: 6px 5px 5px 8px;
+}
+
+main section {}
+
+footer {
+    background: #AEC6CF;
+    max-width: 1000px;
+    margin: auto;
+    clear: both;
+    /* text-align: right; */
+}
+
+footer p {
+    padding: 20px;
+}
+
+address {
+    padding: 10px 20px 30px 10px;
+}
+
+aside>div {
+    margin: 10px auto;
+    background: #AEC6CF;
+    min-height: 100px;
+    padding: 5px 10px 6px 12px;
+}
+
+#Contents {
+    max-width: 1000px;
+    margin: auto;
+    border: none;
+}
+
+#logo {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 30px;
+    margin-right: 75px;
+    color: #FFF;
+}
+
+#logo img {
+    width: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+body>section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 0px;
+    border-bottom: 1px solid #999;
+    color: #333;
+}
+
+@media screen and (max-width: 1000px) {
+    body>section {
+        padding: 30px 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        float: none;
+        width: 100%;
+    }
+
+    aside {
+        float: none;
+        width: 100%;
+    }
+
+}
+
+#pointer {
+    width: 200px;
+    height: 40px;
+    position: relative;
+    background: green;
+}
+
+#rcorners {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+    width: auto;
+    height: auto;
+}
+
+#pointer:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid #AEC6CF;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+#pointer:before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid green;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+
+.flex-container {
+    display: flex;
+    background-color: inherit;
+}
+
+.flex-container>div {
+    background-color: inherit;
+    margin: 10px;
+    padding: 20px 5px 6px 10px;
+    font-size: 30px;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.bg-aqua {
+    background-color: aqua;
+}
+
+.collapsible {
+    background-color: inherit;
+    color: white;
+    cursor: pointer;
+    padding-bottom: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: inherit;
+}
+
+.display-middle {
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+
+.display-container:hover .display-hover {
+    display: block
+}
+
+.display-container:hover span.display-hover {
+    display: inline-block
+}
+
+.display-hover {
+    display: none
+}
+
+.display-position {
+    position: absolute
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: inherit;
+}
